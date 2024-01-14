@@ -1,26 +1,35 @@
-// 'use strict';
+class Car {
+  #brand;
+  #model;
+  #price;
 
-// const library = {
-//   books: 1923,
-//   logBookCount() {
-//     console.log(this.books);
-//   },
-// };
+  constructor({ brand, model, price }) {
+    this.#brand = brand;
+    this.#model = model;
+    this.#price = price;
+  }
 
-// console.log(library.logBookCount());
+  get brand() {
+    return this.#brand;
+  }
 
+  set brand(newBrand) {
+    this.#brand = newBrand;
+  }
 
-'use strict';
+  get model() {
+    return this.#model;
+  }
 
-const library = {
-  books: 1923,
-  logBookCount() {
-    console.log(this.books);
-  },
-};
+  set model(newModel) {
+    this.#model = newModel;
+  }
 
-function showBooks(callback) {
-  callback();
+  get price() {
+    return this.#price;
+  }
+
+  set price(newPrice) {
+    this.#price = newPrice;
+  }
 }
-
-showBooks(library.logBookCount.bind(library));
