@@ -43,3 +43,124 @@
 // }
 
 // getInfo.call(user)
+
+// class Book {
+//   title;
+//   author;
+//   category;
+//   year;
+
+//   constructor(title, author, category, year) {
+//     this.title = title;
+//     this.author = author;
+//     this.category = category;
+//     this.year = year;
+//   }
+
+//   getTitle() {
+//     return this.title;
+//   }
+//   setTitle(newTitle) {
+//     this.title = newTitle;
+//   }
+//   getAuthor() {
+//     return this.author;
+//   }
+//   setAuthor(newAuthor) {
+//     this.author = newAuthor;
+//   }
+//   getCategory() {
+//     return this.category;
+//   }
+//   setCategory(newCategore) {
+//     this.category.push(newCategore);
+//   }
+//   getYear() {
+//     return this.year;
+//   }
+//   setYear(newYear) {
+//     this.year = newYear;
+//   }
+// }
+
+// const user1 = new Book('Lord of the rings', 'Mike super Author', ['fantastic', 'adventure'], 2011);
+// const user2 = new Book('How find new friends', 'Super author Dayl Carnegy', ['psihologie'], 1992);
+// const user3 = new Book(
+//   'Sherlok Holms',
+//   'Super author Den',
+//   ['detective', 'adventure', 'dram'],
+//   1997
+// );
+
+// class ShopBook extends Book {
+//   rating;
+//   #price;
+
+//   constructor(title, author, category, year, price, rating) {
+//     super(title, author, category, year);
+//     this.price = price;
+//     this.rating = rating;
+//   }
+
+//   getPrice() {
+//     return this.#price;
+//   }
+//   setPrice(value) {
+//     if (this.rating > value) {
+//       this.price = this.price - this.price * 0.2;
+//     } else {
+//       return (this.price = this.price - this.price * 0.1);
+//     }
+//   }
+// }
+
+// const user4 = new ShopBook(
+//   'Game of trones',
+//   'Super author Gregory',
+//   ['dram', 'fantastick', 'horror'],
+//   1992,
+//   250,
+//   8.9
+// );
+// console.log(user4);
+// console.log(user4.setPrice(6));
+// console.log(user4);
+// console.log(user4.setYear(1996));
+// console.log(user4);
+// console.log(user4.setPrice(12));
+// console.log(user4);
+// user4.setCategory('historical');
+// console.log(user4);
+
+//---------------------------------------------------- CALCULATE --------------------------------------
+
+class Calculate {
+  a;
+  b;
+  constructor(a, b, value) {
+    this.a = a;
+    this.b = b;
+    this.value = value;
+  }
+  getCalculate() {
+    return this.value;
+  }
+
+  setCalculate(number) {
+    if (number === '+') {
+      this.value = this.a + this.b;
+    } else if (number === '-') {
+      this.value = this.a - this.b;
+    } else if (number === '*') {
+      this.value = this.a * this.b;
+    } else if (number === '/') {
+      this.value = this.a / this.b;
+    } else
+      this.value = 'Sorry but i don`t understand you "number", try again';
+  }
+}
+
+const user1 = new Calculate(10, 4);
+user1.setCalculate('+');
+console.log(user1.getCalculate());
+
