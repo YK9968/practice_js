@@ -134,33 +134,33 @@
 
 //---------------------------------------------------- CALCULATE --------------------------------------
 
-class Calculate {
-  a;
-  b;
-  constructor(a, b, value) {
-    this.a = a;
-    this.b = b;
-    this.value = value;
-  }
-  getCalculate() {
-    return this.value;
-  }
+// class Calculate {
+//   a;
+//   b;
+//   constructor(a, b, value) {
+//     this.a = a;
+//     this.b = b;
+//     this.value = value;
+//   }
+//   getCalculate() {
+//     return this.value;
+//   }
 
-  setCalculate(number) {
-    if (number === '+') {
-      this.value = this.a + this.b;
-    } else if (number === '-') {
-      this.value = this.a - this.b;
-    } else if (number === '*') {
-      this.value = this.a * this.b;
-    } else if (number === '/') {
-      this.value = this.a / this.b;
-    } else
-      this.value = 'Sorry but i don`t understand you "number", try again';
-  }
-}
+//   setCalculate(number) {
+//     if (number === '+') {
+//       this.value = this.a + this.b;
+//     } else if (number === '-') {
+//       this.value = this.a - this.b;
+//     } else if (number === '*') {
+//       this.value = this.a * this.b;
+//     } else if (number === '/') {
+//       this.value = this.a / this.b;
+//     } else
+//       this.value = 'Sorry but i don`t understand you "number", try again';
+//   }
+// }
 
-const user1 = new Calculate(10, 4);
-user1.setCalculate('+');
-console.log(user1.getCalculate());
+// const user1 = new Calculate(10, 4);
+// user1.setCalculate('+');
+// console.log(user1.getCalculate());
 
