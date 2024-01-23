@@ -192,3 +192,65 @@ const elem = productsMasiive.map(createCard);
 console.log(elem);
 
 container.append(...elem);
+
+const subTitleEL = document.querySelector('.sub-title');
+
+subTitleEL.innerHTML = '<a href="">LINK</a>';
+subTitleEL.insertAdjacentHTML('afterBegin', '<a href="">HeLLooooooo</a>');
+
+
+
+
+
+
+const tabletTransactions = [
+  {
+    ID: 1,
+    Price: 10.99,
+    Date: '2022-01-01',
+    Who: 'John',
+    'Type transaction': 'Purchase',
+    'Name Score': 'Company A',
+    'Number Score': 5,
+  },
+  {
+    ID: 2,
+    Price: 5.99,
+    Date: '2022-01-02',
+    Who: 'Jane',
+    'Type transaction': 'Sale',
+    'Name Score': 'Company B',
+    'Number Score': 4,
+  },
+  {
+    ID: 3,
+    Price: 7.49,
+    Date: '2022-01-03',
+    Who: 'Mike',
+    'Type transaction': 'Purchase',
+    'Name Score': 'Company C',
+    'Number Score': 3,
+  },
+  {
+    ID: 4,
+    Price: 3.99,
+    Date: '2022-01-04',
+    Who: 'Sarah',
+    'Type transaction': 'Sale',
+    'Name Score': 'Company D',
+    'Number Score': 2,
+  },
+  {
+    ID: 5,
+    Price: 8.99,
+    Date: '2022-01-05',
+    Who: 'David',
+    'Type transaction': 'Purchase',
+    'Name Score': 'Company E',
+    'Number Score': 1,
+  },
+];
+
+
+
+const createTransactionMarkup = transaction => {}
