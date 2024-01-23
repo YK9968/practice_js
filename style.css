@@ -22,3 +22,10 @@ ul {
 .text-decoration {
   color: red;
 }
+.btn-js {
+  margin: 20px;
+}
+
+.new-add-cat {
+  display: block;
+}
