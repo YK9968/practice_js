@@ -1,0 +1,24 @@
+.link-list-item {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+.btn {
+  padding: 10px 30px;
+  display: block;
+  background-color: aquamarine;
+}
+
+.img-cat {
+  margin-top: 20px;
+}
+
+.text-decoration {
+  color: red;
+}
