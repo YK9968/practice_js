@@ -39,8 +39,8 @@
 
 // img.setAttribute('width', 200);
 
-const closeBtn = document.querySelector('.btn[data-close = "close"]');
-console.log(closeBtn.dataset.close);
+// const closeBtn = document.querySelector('.btn[data-close = "close"]');
+// console.log(closeBtn.dataset.close);
 
 // const newCatImgEl = document.createElement('img');
 // newCatImgEl.classList.add('new-add-cat');
@@ -122,80 +122,80 @@ const container = document.querySelector('body');
 
 // container.append(...elementsTwo);
 
-const productsMasiive = [
-  {
-    name: 'Car',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
-    price: 2000,
-    available: true,
-    onSale: true,
-  },
-  {
-    name: 'Phone',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
-    price: 1000,
-    available: false,
-    onSale: false,
-  },
-  {
-    name: 'Laptop',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
-    price: 1500,
-    available: true,
-    onSale: true,
-  },
-  {
-    name: 'Book',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
-    price: 50,
-    available: true,
-    onSale: false,
-  },
-  {
-    name: 'Watch',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
-    price: 300,
-    available: false,
-    onSale: true,
-  },
-];
+// const productsMasiive = [
+//   {
+//     name: 'Car',
+//     description:
+//       'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
+//     price: 2000,
+//     available: true,
+//     onSale: true,
+//   },
+//   {
+//     name: 'Phone',
+//     description:
+//       'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
+//     price: 1000,
+//     available: false,
+//     onSale: false,
+//   },
+//   {
+//     name: 'Laptop',
+//     description:
+//       'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
+//     price: 1500,
+//     available: true,
+//     onSale: true,
+//   },
+//   {
+//     name: 'Book',
+//     description:
+//       'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
+//     price: 50,
+//     available: true,
+//     onSale: false,
+//   },
+//   {
+//     name: 'Watch',
+//     description:
+//       'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
+//     price: 300,
+//     available: false,
+//     onSale: true,
+//   },
+// ];
 
-const createCard = ({ name, description, price }) => {
-  const productEL = document.createElement('article');
-  productEL.classList.add('product');
+// const createCard = ({ name, description, price }) => {
+//   const productEL = document.createElement('article');
+//   productEL.classList.add('product');
 
-  const productTitleEl = document.createElement('h1');
-  productTitleEl.textContent = name;
-  productTitleEl.classList.add('product-name');
+//   const productTitleEl = document.createElement('h1');
+//   productTitleEl.textContent = name;
+//   productTitleEl.classList.add('product-name');
 
-  const productDescrEl = document.createElement('p');
-  productDescrEl.textContent = description;
-  productDescrEl.classList.add('product-descr');
+//   const productDescrEl = document.createElement('p');
+//   productDescrEl.textContent = description;
+//   productDescrEl.classList.add('product-descr');
 
-  const productPriceEl = document.createElement('p');
-  productPriceEl.textContent = `Price: ${price} credits`;
-  productPriceEl.classList.add('product-price');
+//   const productPriceEl = document.createElement('p');
+//   productPriceEl.textContent = `Price: ${price} credits`;
+//   productPriceEl.classList.add('product-price');
 
-  productEL.append(productTitleEl, productDescrEl, productPriceEl);
+//   productEL.append(productTitleEl, productDescrEl, productPriceEl);
 
-  return productEL;
-};
+//   return productEL;
+// };
 
-const elem = productsMasiive.map(createCard);
+// const elem = productsMasiive.map(createCard);
 
-console.log(elem);
+// console.log(elem);
 
-container.append(...elem);
+// container.append(...elem);
 
-const subTitleEL = document.querySelector('.sub-title');
+// const subTitleEL = document.querySelector('.sub-title');
 
-subTitleEL.innerHTML = '<a href="">LINK</a>';
-subTitleEL.insertAdjacentHTML('afterBegin', '<a href="">HeLLo</a>');
+// subTitleEL.innerHTML = '<a href="">LINK</a>';
+// subTitleEL.insertAdjacentHTML('afterBegin', '<a href="">HeLLo</a>');
 
 const tabletTransactions = [
   {
@@ -245,4 +245,47 @@ const tabletTransactions = [
   },
 ];
 
-const createTransactionMarkup = transaction => {};
+// const createTransactionMarkup = ({ ID, Price, Date, Who }) => {
+//   return `
+//   <table>
+//   <th>${ID}</th>
+//   <th> ${Price}</th>
+//   <th>${Date}</th>
+//   <th>${Who}</th>
+//   </table>
+//   `;
+// };
+
+// const infoEl = tabletTransactions.map(createTransactionMarkup).join('');
+
+// container.insertAdjacentHTML('beforeBegin', infoEl);
+
+// const createTableValue = ({ ID, Price, Date, Who }) => {
+//   const createTable = document.createElement('table');
+//   createTable.classList.add('table-transaction');
+
+//   const tr1 = document.createElement('th');
+//   tr1.classList.add('tr-trans');
+//   tr1.textContent = ID;
+//   const tr2 = document.createElement('th');
+//   tr2.classList.add('tr-trans');
+//   tr2.textContent = Price;
+//   const tr3 = document.createElement('th');
+//   tr3.classList.add('tr-trans');
+//   tr3.textContent = Date;
+//   const tr4 = document.createElement('th');
+//   tr4.classList.add('tr-trans');
+//   tr4.textContent = Who;
+
+//   createTable.append(tr1, tr2, tr3, tr4);
+
+//   console.log(createTable);
+
+//   return createTable;
+// };
+
+// createTableValue(tabletTransactions);
+
+// const elemTrans = tabletTransactions.map(createTableValue);
+
+// container.prepend(...elemTrans);
