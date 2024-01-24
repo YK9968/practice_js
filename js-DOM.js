@@ -32,16 +32,15 @@
 // btnEl.style.border = 'none';
 
 // const img = document.querySelector('.img-cat');
-// img.src = [
-//   'https://www.lismore.nsw.gov.au/files/assets/public/v/1/1.-households/3.-pets-amp-animals/images/kitten.jpg?dimension=pageimage&w=480',
-// ];
-// img.alt = ['cute cat'];
+// (img.src =
+//   'https://www.lismore.nsw.gov.au/files/assets/public/v/1/1.-households/3.-pets-amp-animals/images/kitten.jpg?dimension=pageimage&w=480'),
+//   (img.alt = 'cute cat');
 // img.width = 250;
 
 // img.setAttribute('width', 200);
 
-// const closeBtn = document.querySelector('.btn[data-close = "close" ]');
-// console.log(closeBtn.dataset.close);
+const closeBtn = document.querySelector('.btn[data-close = "close"]');
+console.log(closeBtn.dataset.close);
 
 // const newCatImgEl = document.createElement('img');
 // newCatImgEl.classList.add('new-add-cat');
@@ -196,12 +195,7 @@ container.append(...elem);
 const subTitleEL = document.querySelector('.sub-title');
 
 subTitleEL.innerHTML = '<a href="">LINK</a>';
-subTitleEL.insertAdjacentHTML('afterBegin', '<a href="">HeLLooooooo</a>');
-
-
-
-
-
+subTitleEL.insertAdjacentHTML('afterBegin', '<a href="">HeLLo</a>');
 
 const tabletTransactions = [
   {
@@ -251,6 +245,4 @@ const tabletTransactions = [
   },
 ];
 
-
-
-const createTransactionMarkup = transaction => {}
+const createTransactionMarkup = transaction => {};
