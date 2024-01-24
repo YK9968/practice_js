@@ -12,7 +12,10 @@ ul {
 .btn {
   padding: 10px 30px;
   display: block;
-  background-color: aquamarine;
+  background-color: rgb(133, 250, 107);
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
 }
 
 .img-cat {
@@ -28,4 +31,25 @@ ul {
 
 .new-add-cat {
   display: block;
+}
+/* body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 32px;
+} */
+
+body {
+  margin: 16px;
+}
+
+select {
+  padding: 4px;
 }

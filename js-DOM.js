@@ -1,3 +1,5 @@
+const container = document.querySelector('body');
+
 // const navEL = document.querySelector('.link-list-item');
 // console.log(navEL.href);
 // navEL.href = ['https://github.com/YK9968/goit-markup-hw-03'];
@@ -7,7 +9,7 @@
 // console.log(textEl.textContent);
 // const titleEl = document.querySelector('.main-title');
 // titleEl.textContent = 'Hello World';
-
+// ----------------------------------------------------------------------------------
 // const hasClass = titleEl.classList.contains('main-title');
 // console.log(hasClass);
 // titleEl.classList.add('text-decoration');
@@ -30,7 +32,7 @@
 // btnEl.style.color = 'white';
 // btnEl.style.borderRadius = '25px';
 // btnEl.style.border = 'none';
-
+// ----------------------------------------------------------------------------------
 // const img = document.querySelector('.img-cat');
 // (img.src =
 //   'https://www.lismore.nsw.gov.au/files/assets/public/v/1/1.-households/3.-pets-amp-animals/images/kitten.jpg?dimension=pageimage&w=480'),
@@ -38,10 +40,10 @@
 // img.width = 250;
 
 // img.setAttribute('width', 200);
-
+// ----------------------------------------------------------------------------------
 // const closeBtn = document.querySelector('.btn[data-close = "close"]');
 // console.log(closeBtn.dataset.close);
-
+// ----------------------------------------------------------------------------------
 // const newCatImgEl = document.createElement('img');
 // newCatImgEl.classList.add('new-add-cat');
 // newCatImgEl.src =
@@ -52,20 +54,18 @@
 // const bodyEl = document.querySelector('body');
 
 // bodyEl.append(newCatImgEl);
-// bodyEl.innerHTML;
+// ----------------------------------------------------------------------------------
 
-const container = document.querySelector('body');
-
-// const colorPikerOptions = [
-//   { label: 'red', color: '#FF0000' },
-//   { label: 'green', color: '#008000' },
-//   { label: 'blue', color: '#0000FF' },
-//   { label: 'pink', color: '#FF00FF' },
-//   { label: 'brown', color: '#A52A2A' },
-//   { label: 'white', color: '#FFFFFF' },
-//   { label: 'purple', color: '#800080' },
-// ];
-
+const colorPikerOptions = [
+  { label: 'red', color: '#FF0000' },
+  { label: 'green', color: '#008000' },
+  { label: 'blue', color: '#0000FF' },
+  { label: 'pink', color: '#FF00FF' },
+  { label: 'brown', color: '#A52A2A' },
+  { label: 'white', color: '#FFFFFF' },
+  { label: 'purple', color: '#800080' },
+];
+// ----------------------------------------------------------------------------------
 // const elements = colorPikerOptions.map(option => {
 //   const buttonEL = document.createElement('button');
 //   buttonEL.classList.add('btn-js');
@@ -92,14 +92,14 @@ const container = document.querySelector('body');
 //   });
 // };
 
-// const product = {
-//   name: 'Car',
-//   description:
-//     'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
-//   price: 2000,
-//   available: true,
-//   onSale: true,
-// };
+const product = {
+  name: 'Car',
+  description:
+    'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
+  price: 2000,
+  available: true,
+  onSale: true,
+};
 
 // const productEL = document.createElement('article');
 // productEL.classList.add('product');
@@ -121,50 +121,50 @@ const container = document.querySelector('body');
 // const elementsTwo = makeColorFn(colorPikerOptions);
 
 // container.append(...elementsTwo);
-
-// const productsMasiive = [
-//   {
-//     name: 'Car',
-//     description:
-//       'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
-//     price: 2000,
-//     available: true,
-//     onSale: true,
-//   },
-//   {
-//     name: 'Phone',
-//     description:
-//       'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
-//     price: 1000,
-//     available: false,
-//     onSale: false,
-//   },
-//   {
-//     name: 'Laptop',
-//     description:
-//       'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
-//     price: 1500,
-//     available: true,
-//     onSale: true,
-//   },
-//   {
-//     name: 'Book',
-//     description:
-//       'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
-//     price: 50,
-//     available: true,
-//     onSale: false,
-//   },
-//   {
-//     name: 'Watch',
-//     description:
-//       'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
-//     price: 300,
-//     available: false,
-//     onSale: true,
-//   },
-// ];
-
+// ------------------------------------------------------------------------------------------
+const productsMasiive = [
+  {
+    name: 'Car',
+    description:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
+    price: 2000,
+    available: true,
+    onSale: true,
+  },
+  {
+    name: 'Phone',
+    description:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
+    price: 1000,
+    available: false,
+    onSale: false,
+  },
+  {
+    name: 'Laptop',
+    description:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
+    price: 1500,
+    available: true,
+    onSale: true,
+  },
+  {
+    name: 'Book',
+    description:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
+    price: 50,
+    available: true,
+    onSale: false,
+  },
+  {
+    name: 'Watch',
+    description:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Nesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum teneturNesciunt beatae, repellendus reiciendis nostrum tenetur',
+    price: 300,
+    available: false,
+    onSale: true,
+  },
+];
+// --------------------------------------------------------------------------------
 // const createCard = ({ name, description, price }) => {
 //   const productEL = document.createElement('article');
 //   productEL.classList.add('product');
@@ -192,11 +192,7 @@ const container = document.querySelector('body');
 
 // container.append(...elem);
 
-// const subTitleEL = document.querySelector('.sub-title');
-
-// subTitleEL.innerHTML = '<a href="">LINK</a>';
-// subTitleEL.insertAdjacentHTML('afterBegin', '<a href="">HeLLo</a>');
-
+// -----------------------------------------------------------------------------------
 const tabletTransactions = [
   {
     ID: 1,
@@ -244,7 +240,7 @@ const tabletTransactions = [
     'Number Score': 1,
   },
 ];
-
+// ------------------------------------------------------------------------ var 1
 // const createTransactionMarkup = ({ ID, Price, Date, Who }) => {
 //   return `
 //   <table>
@@ -259,7 +255,9 @@ const tabletTransactions = [
 // const infoEl = tabletTransactions.map(createTransactionMarkup).join('');
 
 // container.insertAdjacentHTML('beforeBegin', infoEl);
+//
 
+// ----------------------------------------------------------------------------- var 2
 // const createTableValue = ({ ID, Price, Date, Who }) => {
 //   const createTable = document.createElement('table');
 //   createTable.classList.add('table-transaction');
@@ -289,3 +287,132 @@ const tabletTransactions = [
 // const elemTrans = tabletTransactions.map(createTableValue);
 
 // container.prepend(...elemTrans);
+
+// ----------------------------------------------------------------------------------
+
+// const button = document.querySelector('.my-button');
+
+// const handleClickTest = () => {
+//   console.log('The button was pressed and now the next image will appear');
+// };
+
+// button.addEventListener('click', handleClickTest);
+
+// -------------------------------------------------------------------------------------
+// const singleBtn = document.querySelector('#single');
+
+// const handleClick = () => {
+//   console.log('click event listener callback');
+// };
+
+// singleBtn.addEventListener('click', handleClick);
+
+// const multiBtn = document.querySelector('#multiple');
+
+// const firstCallback = () => {
+//   console.log('First callback!');
+// };
+// const secondCallback = () => {
+//   console.log('Second callback!');
+// };
+// const thirdCallback = () => {
+//   console.log('Third callback!');
+// };
+
+// multiBtn.addEventListener('click', firstCallback);
+// multiBtn.addEventListener('click', secondCallback);
+// multiBtn.addEventListener('click', thirdCallback);
+// -------------------------------------------------------------------------------------
+// const addListenerBtn = document.querySelector('.js-add');
+// const removeListenerBtn = document.querySelector('.js-remove');
+// const btn = document.querySelector('.target-btn');
+
+// const handleClick = () => {
+//   console.log('click event listener callback');
+// };
+
+// addListenerBtn.addEventListener('click', () => {
+//   btn.addEventListener('click', handleClick);
+//   console.log('click event listener was added to btn');
+// });
+
+// removeListenerBtn.addEventListener('click', () => {
+//   btn.removeEventListener('click', handleClick);
+//   console.log('click event listener was removed from btn');
+// });
+
+// -------------------------------------------------------------------------------------
+
+// const clearLogBtn = document.querySelector('.js-clear');
+// const logList = document.querySelector('.log-list');
+// let keypressCounter = 1;
+
+// console.log(clearLogBtn);
+
+// document.addEventListener('keydown', logMessage);
+// document.addEventListener('keyup', logMessage);
+// clearLogBtn.addEventListener('click', reset);
+
+// function logMessage({ type, key, code }) {
+//   const markup = `<div class="log-item">
+//     <span class="chip">${keypressCounter}</span>
+//     <ul>
+//       <li><b>Event</b>: ${type}</li>
+//       <li><b>Key</b>: ${key}</li>
+//       <li><b>Code</b>: ${code}</li>
+//     </ul>
+//   </div>`;
+
+//   logList.insertAdjacentHTML('afterbegin', markup);
+
+//   if (type === 'keyup') {
+//     incrementKeypressCounter();
+//   }
+// }
+
+// function reset() {
+//   keypressCounter = 1;
+//   logList.innerHTML = '';
+// }
+
+// function incrementKeypressCounter() {
+//   keypressCounter += 1;
+// }
+
+// -------------------------------------------------------------------------------------
+
+// const registerForm = document.querySelector('.form');
+
+// registerForm.addEventListener('submit', handleSubmit);
+
+// function handleSubmit(event) {
+//   event.preventDefault();
+//   const form = event.target;
+//   const login = form.elements.login.value;
+//   const password = form.elements.password.value;
+
+//   if (login === '' || password === '') {
+//     return console.log('Please fill in all the fields!');
+//   }
+
+//   console.log(`Login: ${login}, Password: ${password}`);
+//   form.reset();
+// }
+
+// -------------------------------------------------------------------------------------
+
+// const select = document.querySelector('.pizza-select');
+// const textOutput = document.querySelector('.text-output');
+// const valueOutput = document.querySelector('.value-output');
+
+// select.addEventListener('change', setOutput);
+
+// function setOutput(event) {
+//   const selectedOptionValue = event.currentTarget.value;
+//   const selectedOptionIndex = event.currentTarget.selectedIndex;
+//   const selectedOptionText = event.currentTarget.options[selectedOptionIndex].text;
+
+//   textOutput.textContent = selectedOptionText;
+//   valueOutput.textContent = selectedOptionValue;
+// }
+// -------------------------------------------------------------------------------------
