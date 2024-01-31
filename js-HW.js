@@ -47,6 +47,7 @@ const images = [
 ];
 // ======================================================= markup =================
 const galleryEL = document.querySelector('.gallery');
+let instance;
 
 const markupImages = images
   .map(elem => {
@@ -81,12 +82,11 @@ function onClickImg(event) {
   if (event.target.nodeName !== 'IMG') {
     return;
   }
-  const instance = basicLightbox.create(`
+  instance = basicLightbox.create(`
     <img src="${event.target.dataset.source}" width="800" height="600">
 `);
 
   instance.show();
-
   galleryEL.addEventListener('keydown', onCloseClickImg);
 
   function onCloseClickImg(event) {
