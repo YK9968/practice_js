@@ -39,19 +39,39 @@
 // console.log('✅ This is fine, we handled parsing error in try...catch');
 // =============================================================================
 
-localStorage.setItem('ui-theme', 'light');
-console.log(localStorage);
+// localStorage.setItem('ui-theme', 'light');
+// console.log(localStorage);
 
-const settings = {
-  theme: 'dark',
-  isAuthenticated: true,
-  options: [1, 2, 3],
-};
+// const settings = {
+//   theme: 'dark',
+//   isAuthenticated: true,
+//   options: [1, 2, 3],
+// };
 
-localStorage.setItem('settings', JSON.stringify(settings));
+// localStorage.setItem('settings', JSON.stringify(settings));
 
-const savedSettings = localStorage.getItem('settings');
-console.log(savedSettings);
+// const savedSettings = localStorage.getItem('settings');
+// console.log(savedSettings);
 
-const parsedSettings = JSON.parse(savedSettings);
-console.log(parsedSettings);
+// const parsedSettings = JSON.parse(savedSettings);
+// console.log(parsedSettings);
+// =========================================================================================
+
+// const formEl = document.querySelector('.feedback-form');
+// const btn = document.querySelector('button');
+
+// const localStorageKey = 'key-exsample';
+// const textarea = formEl.elements.message;
+// textarea.value = localStorage.getItem(localStorageKey) ?? '';
+
+// formEl.addEventListener('input', evt => {
+//   localStorage.setItem(localStorageKey, evt.target.value);
+// });
+
+// formEl.addEventListener('submit', evt => {
+//   evt.preventDefault();
+//   console.log(evt.target.elements.message.value);
+//   localStorage.removeItem(localStorageKey);
+//   formEl.reset();
+// });
+// ====================================================================================
