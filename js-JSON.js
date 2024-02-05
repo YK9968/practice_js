@@ -57,21 +57,25 @@
 // console.log(parsedSettings);
 // =========================================================================================
 
-// const formEl = document.querySelector('.feedback-form');
-// const btn = document.querySelector('button');
+const formEl = document.querySelector('.feedback-form');
+const localStorageValue = 'example';
+const textarea = formEl.elements.message;
 
-// const localStorageKey = 'key-exsample';
-// const textarea = formEl.elements.message;
-// textarea.value = localStorage.getItem(localStorageKey) ?? '';
+textarea.value = localStorage.getItem(localStorageValue) ?? '';
 
-// formEl.addEventListener('input', evt => {
-//   localStorage.setItem(localStorageKey, evt.target.value);
-// });
+formEl.addEventListener('input', onDinamicValue);
 
-// formEl.addEventListener('submit', evt => {
-//   evt.preventDefault();
-//   console.log(evt.target.elements.message.value);
-//   localStorage.removeItem(localStorageKey);
-//   formEl.reset();
-// });
+function onDinamicValue(evt) {
+  localStorage.setItem(localStorageValue, evt.target.value);
+}
+
+formEl.addEventListener('submit', onClickButtomForm);
+
+function onClickButtomForm(evt) {
+  evt.preventDefault();
+  console.log(evt.target.elements.message.value);
+  localStorage.removeItem(localStorageValue);
+  formEl.reset();
+}
+
 // ====================================================================================
