@@ -1,20 +1,30 @@
-const fetchUserFromServer = (username, onSuccess, onError) => {
-  console.log(`Fetching data for ${username}`);
+const isThatTrue = false;
 
+const promise = new Promise(onResolve => {
   setTimeout(() => {
-    // Change value of isSuccess variable to simulate request status
-    const isSuccess = false;
-
-    if (isSuccess) {
-      onSuccess('success value');
-    } else {
-      onError('error');
-    }
+    onResolve(5);
   }, 2000);
-};
+});
 
-fetchUserFromServer(
-  'Mango',
-  user => console.log(user),
-  error => console.error(error)
-);
+console.log(promise);
+
+promise
+  .then(value => {
+    console.log(value);
+    return value * 10;
+  })
+  .then(value => {
+    console.log(value);
+    return value / 2;
+  })
+  .then(value => {
+    console.log(value);
+    return value + 5;
+  })
+  .then(value => {
+    console.log(value);
+  })
+  .catch(error => console.log(error))
+  .finally(() => {
+    console.log('Mayby I understand');
+  });
