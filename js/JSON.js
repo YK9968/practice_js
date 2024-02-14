@@ -1,11 +1,23 @@
-const p1 = new Promise((resolve, reject) => {
-  setTimeout(() => resolve(1), 2000);
-});
+const bakendData = {
+  server: 'aws',
+  port: 2000,
+  status: 'working',
+};
 
-const p2 = new Promise((resolve, reject) => {
-  setTimeout(() => reject(2), 1000);
-});
+const p = new Promise(function (resolve, reject) {
+  const isTrue = true;
+  setTimeout(() => {
+    if (isTrue) {
+      resolve(bakendData);
+    } else {
+      reject('You have a problem');
+    }
+  }, 2000);
+})
+  .then(data => {
+    console.log(data);
+  })
 
-Promise.race([p1, p2])
-  .then(value => console.log(value))
-  .catch(error => console.log(error)); // 2
+  .catch(error => {
+    console.log(error);
+  });
