@@ -1,30 +1,11 @@
-const isThatTrue = false;
-
-const promise = new Promise(onResolve => {
-  setTimeout(() => {
-    onResolve(5);
-  }, 2000);
+const p1 = new Promise((resolve, reject) => {
+  setTimeout(() => resolve(1), 2000);
 });
 
-console.log(promise);
+const p2 = new Promise((resolve, reject) => {
+  setTimeout(() => reject(2), 1000);
+});
 
-promise
-  .then(value => {
-    console.log(value);
-    return value * 10;
-  })
-  .then(value => {
-    console.log(value);
-    return value / 2;
-  })
-  .then(value => {
-    console.log(value);
-    return value + 5;
-  })
-  .then(value => {
-    console.log(value);
-  })
-  .catch(error => console.log(error))
-  .finally(() => {
-    console.log('Mayby I understand');
-  });
+Promise.race([p1, p2])
+  .then(value => console.log(value))
+  .catch(error => console.log(error)); // 2
