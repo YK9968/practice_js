@@ -1,23 +1,13 @@
-const bakendData = {
-  server: 'aws',
-  port: 2000,
-  status: 'working',
-};
+const date = new Date('March 16, 2030 14:25:00');
+console.log('Data:', date);
+console.log(date.getDate());
+console.log(date.getDay());
+console.log(date.getMonth());
+console.log(date.getFullYear());
+console.log(date.getHours());
+console.log(date.getMinutes());
+console.log(date.getMilliseconds());
 
-const p = new Promise(function (resolve, reject) {
-  const isTrue = true;
-  setTimeout(() => {
-    if (isTrue) {
-      resolve(bakendData);
-    } else {
-      reject('You have a problem');
-    }
-  }, 2000);
-})
-  .then(data => {
-    console.log(data);
-  })
 
-  .catch(error => {
-    console.log(error);
-  });
+date.setMonth(4); 
+console.log(date);
