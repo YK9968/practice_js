@@ -1,6 +1,10 @@
+const buttonSearchUsers = document.querySelector('.btn');
+const userListEl = document.querySelector('.user-list');
+const listEl = document.querySelector('.list');
+
+// ----------------------------------------------------------------- ^ var ^
 let renderImg;
 // RENDER_IMG
-// const listEl = document.querySelector('.list');
 
 // const KEY_API = '42471453-a4a004408e33f852748a0909e';
 // const BASE_URI = 'https://pixabay.com/api/';
@@ -40,8 +44,6 @@ let renderImg;
 let newInfoUsers;
 // CREATE USERS
 
-// const buttonSearchUsers = document.querySelector('.btn');
-// const userListEl = document.querySelector('.user-list');
 // const paramsSearch = new URLSearchParams({ _limit: 5, _sort: 'name' });
 
 // buttonSearchUsers.addEventListener('click', handleSearchUsers);
@@ -72,3 +74,32 @@ let newInfoUsers;
 //     });
 // }
 let crud;
+
+const postToAdd = {
+  title: 'CRUD',
+  body: 'CRUD is awesome!',
+};
+
+const options = {
+  method: 'POST',
+  body: JSON.stringify(postToAdd),
+  headers: {
+    'Content-Type': 'application/json; charset=UTF-8',
+  },
+};
+
+const postId = 1;
+
+fetch('https://jsonplaceholder.typicode.com/posts/', options)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(response.status);
+    }
+    return response.json();
+  })
+  .then(posts => {
+    console.log(posts);
+  })
+  .catch(error => {
+    console.log(error);
+  });
