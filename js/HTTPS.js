@@ -75,31 +75,32 @@ let newInfoUsers;
 // }
 let crud;
 
-const postToAdd = {
-  title: 'CRUD',
-  body: 'CRUD is awesome!',
-};
+// CRUD
+// const postToAdd = {
+//   title: 'CRUD',
+//   body: 'CRUD is awesome!',
+// };
 
-const options = {
-  method: 'POST',
-  body: JSON.stringify(postToAdd),
-  headers: {
-    'Content-Type': 'application/json; charset=UTF-8',
-  },
-};
+// const options = {
+//   method: 'POST',
+//   body: JSON.stringify(postToAdd),
+//   headers: {
+//     'Content-Type': 'application/json; charset=UTF-8',
+//   },
+// };
 
-const postId = 1;
+// const postId = 1;
 
-fetch('https://jsonplaceholder.typicode.com/posts/', options)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error(response.status);
-    }
-    return response.json();
-  })
-  .then(posts => {
-    console.log(posts);
-  })
-  .catch(error => {
-    console.log(error);
-  });
+// fetch('https://jsonplaceholder.typicode.com/posts/', options)
+//   .then(response => {
+//     if (!response.ok) {
+//       throw new Error(response.status);
+//     }
+//     return response.json();
+//   })
+//   .then(posts => {
+//     console.log(posts);
+//   })
+//   .catch(error => {
+//     console.log(error);
+//   });
